@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py *)",
+      "Bash(npm run lint)",
+      "Bash(npm run dev)"
+    ]
+  }
+}
