@@ -2,6 +2,14 @@ import { useEffect, useState } from 'react';
 import './Events.css';
 import Reveal from '../../components/shared/Reveal/Reveal';
 import TiltCard from '../../components/shared/TiltCard/TiltCard';
+import FlagDivider from '../../components/shared/FlagDivider/FlagDivider';
+
+const ROADSHOWS = [
+    '/images/4.jpg',
+    '/images/3.jpg',
+    '/images/2.jpg',
+    '/images/750355804_1399295025587058_2544081992484580638_n.jpg',
+];
 
 const Events = () => {
     const [events, setEvents] = useState([]);
@@ -76,6 +84,32 @@ const Events = () => {
                         ))}
                     </div>
                 )}
+
+                {/* Roadshows */}
+                <div className='max-w-6xl mx-auto mt-24 md:mt-32'>
+                    <FlagDivider label="Roadshows" className='mb-10' />
+                    <Reveal>
+                        <p className='text-center text-zinc-400 max-w-2xl mx-auto mb-12'>
+                            Between competitions, Formula IUT takes the car on the road &mdash; to campus
+                            showcases, auto exhibitions, and roadshows &mdash; sharing the project with students,
+                            sponsors, and the wider community.
+                        </p>
+                    </Reveal>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+                        {ROADSHOWS.map((src, i) => (
+                            <TiltCard key={src} index={i}>
+                                <div className='f1-card rounded-2xl overflow-hidden transition-colors duration-300 hover:border-f1-red'>
+                                    <img
+                                        src={src}
+                                        alt={`Formula IUT roadshow ${i + 1}`}
+                                        loading='lazy'
+                                        className='w-full aspect-video object-cover'
+                                    />
+                                </div>
+                            </TiltCard>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );
