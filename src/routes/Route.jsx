@@ -7,6 +7,7 @@ import Contact from "../pages/Contact/Contact";
 import Error from "../pages/Error/Error";
 import Sponsors from "../pages/Sponsors/Sponsors";
 import Events from "../pages/Events/Events";
+import Donate from "../pages/Donate/Donate";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
     {
       path: "/events",
       Component: Events
+    },
+    {
+      path: "/donate",
+      Component: Donate
     }
   ],
   },

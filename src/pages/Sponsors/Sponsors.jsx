@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
-import { ChevronDown, Eye, Users, Wrench } from 'lucide-react';
+import { Eye, Users, Wrench } from 'lucide-react';
 import { Link } from 'react-router';
-import TeamPhoto from "../../assets/SLider1.jpg";
 import titleSponsor from "../../assets/title_sponsor.png";
 import diamondPartner from "../../assets/diamond_partner.png";
 import goldPartner1 from "../../assets/gold_partner_1.png";
@@ -102,30 +101,12 @@ const Sponsors = () => {
         document.title = 'FormulaIUT | Sponsors';
     }, []);
 
-    // Scroll to team content after clicking the down arrow
-    const scrollToSection = () => {
-        const section = document.getElementById('sponsors-content');
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
     return (
         <div className='bg-black'>
-            {/* Team Photo */}
-            <div className='relative w-full h-svh min-h-80'>
-                <img src={TeamPhoto} alt="Formula IUT car" className='w-full h-full object-cover' />
-                <div className='absolute inset-0 bg-black/40 pointer-events-none'></div>
-                <div className='absolute left-0 right-0 bottom-0 h-1/3 bg-linear-to-b from-transparent to-black pointer-events-none'></div>
-                <button type="button" onClick={scrollToSection} className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 text-white cursor-pointer">
-                    <ChevronDown className="scroll-arrow w-9 h-9 md:w-10 md:h-10" />
-                </button>
-            </div>
-
             {/* Sponsors Content */}
             <div id="sponsors-content" className='px-4 md:px-8 pb-16'>
                 <Reveal>
-                    <h2 className='font-display uppercase text-4xl md:text-6xl font-extrabold text-white text-center mt-16 md:mt-24 mb-10 w-11/12 mx-auto'>Our Sponsors</h2>
+                    <h2 className='font-display uppercase text-4xl md:text-6xl font-extrabold text-white text-center mt-30 mb-10 w-11/12 mx-auto'>Our Sponsors</h2>
                 </Reveal>
 
                 {/* Why sponsor us */}

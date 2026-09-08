@@ -4,10 +4,10 @@ import ParallaxImage from '../../../components/shared/ParallaxImage/ParallaxImag
 
 const SPECS = [
     { icon: Cog, label: 'Chassis', value: 'Tubular steel spaceframe (placeholder)' },
-    { icon: Zap, label: 'Engine', value: '600cc inline-4 (placeholder)' },
-    { icon: Gauge, label: 'Power Output', value: '~80 hp (placeholder)' },
+    { icon: Zap, label: 'Engine', value: '321cc Yamaha R3 (2020)' },
+    { icon: Gauge, label: 'Power Output', value: '42 hp' },
     { icon: Weight, label: 'Weight', value: '~230 kg (placeholder)' },
-    { icon: Timer, label: '0-60 mph', value: '~4.0s (placeholder)' },
+    { icon: Timer, label: '0-60 mph', value: '4.8s' },
     { icon: Wind, label: 'Top Speed', value: '~120 km/h (placeholder)' },
 ];
 

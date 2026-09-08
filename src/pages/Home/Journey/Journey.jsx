@@ -4,24 +4,29 @@ import Reveal from '../../../components/shared/Reveal/Reveal';
 
 const MILESTONES = [
     {
+        year: '2022',
+        title: 'Formula Student UK — Finalist',
+        text: 'Formula IUT was selected as a finalist at Formula Student UK 2022, the team’s first major international milestone.',
+    },
+    {
         year: '2023',
-        title: 'Team Founded',
-        text: 'A group of students came together to start Formula IUT with one goal: build a competitive FSAE car from the ground up.',
+        title: 'Formula Bharat — 3rd in Static Round',
+        text: 'Competing against 50 university teams from different countries, Formula IUT secured 3rd position in the Static Round of Formula Bharat 2023, with strong design, cost analysis, and business planning.',
     },
     {
         year: '2024',
-        title: 'First Chassis Built',
-        text: 'The team designed and manufactured its first in-house chassis, moving from concept sketches to a rolling prototype.',
+        title: 'Formula Imperial — 7th Overall',
+        text: 'The team qualified for the final round of Formula Imperial 2024 and finished in 7th position.',
     },
     {
         year: '2025',
-        title: 'First Competition Entry',
-        text: 'Formula IUT entered its first FSAE competition, putting the car and the team through static and dynamic events.',
+        title: 'Formula Student China — 2nd Best Foreign Team',
+        text: 'Formula IUT’s first on-site international participation with its car: named 2nd Best Foreign Team, placed 8th in the Business Plan Presentation, and earned three technical recognition stickers at Formula Student China 2025.',
     },
     {
         year: '2026',
-        title: "What's Next",
-        text: 'This is where the next milestone goes — a new subsystem, a competition result, a record lap. Add it here.',
+        title: 'FSUK Sim Racing — 9th of 72',
+        text: 'At the Formula Student UK 2026 Sim Racing Series, hosted at Williams F1 HQ, Formula IUT placed 9th out of 72 universities worldwide and earned praise from motorsport judges on its Race Engineering debut. Next stop: Formula Student China 2026.',
     },
 ];
 
@@ -48,8 +53,8 @@ export default function Journey() {
             <Reveal className="text-center mb-16 md:mb-20">
                 <p className="font-display uppercase tracking-[0.3em] text-f1-red text-sm mb-3">Our Story</p>
                 <h2 className="font-display uppercase text-4xl md:text-5xl font-extrabold text-white">The Journey So Far</h2>
-                <p className="text-zinc-500 mt-3 max-w-xl mx-auto text-sm">
-                    <em>(Placeholder timeline &mdash; swap in the team&apos;s real milestones and dates.)</em>
+                <p className="text-zinc-400 mt-3 max-w-xl mx-auto text-sm">
+                    From a first UK finalist spot to racing our own car on the international stage.
                 </p>
             </Reveal>
 

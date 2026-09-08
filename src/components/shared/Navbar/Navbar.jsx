@@ -9,6 +9,7 @@ const ROUTES = [
   { to: '/team', label: 'Team' },
   { to: '/events', label: 'Events' },
   { to: '/sponsors', label: 'Sponsors' },
+  { to: '/donate', label: 'Donate' },
   { to: '/contact', label: 'Contact Us' },
 ];
 

@@ -30,8 +30,8 @@ const sponsorLogos = [
 const stats = [
     { value: 3, suffix: '', label: 'Years Building' },
     { value: 40, suffix: '+', label: 'Team Members' },
-    { value: 5, suffix: '', label: 'Subsystems' },
-    { value: 2, suffix: '', label: 'Competitions Entered' },
+    { value: 4, suffix: '', label: 'Subteams' },
+    { value: 6, suffix: '', label: 'Competitions Entered' },
 ];
 
 const Home = () => {

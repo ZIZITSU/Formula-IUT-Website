@@ -17,12 +17,12 @@ const Intro = () => {
                     <Reveal delay={0.1} className='w-full md:w-7/12'>
                         <h2 className='font-display uppercase text-white text-4xl md:text-5xl font-bold mb-4'>Who We Are</h2>
                         <p className='text-base text-justify md:text-lg leading-relaxed text-gray-200'>
-                            Formula IUT is the Formula SAE (FSAE) team of the Islamic
-                            University of Technology, made up of students from across engineering disciplines who
-                            design, build, and race a formula-style vehicle from scratch. Working on an intensive
-                            build cycle each year, the team manufactures and tests an entirely in-house design while
-                            self-managing finances, sponsorship, and outreach. <em>(Placeholder copy &mdash; replace
-                            with the team&apos;s own story.)</em>
+                            Formula IUT is the Formula SAE (FSAE) racing team of the Islamic University of
+                            Technology &mdash; a multidisciplinary student motorsports team with Engineering,
+                            Business, and Management divisions. Its members design, build, and race a
+                            formula-style vehicle from scratch while self-managing finances, sponsorship, and
+                            outreach, and the team is currently finalising its race car for upcoming
+                            international events.
                         </p>
                     </Reveal>
                 </div>
@@ -41,9 +41,10 @@ const Intro = () => {
                             judging to acceleration, autocross, and endurance.
                         </p>
                         <p className='text-base text-justify md:text-lg leading-relaxed text-gray-200'>
-                            Formula IUT represents the Islamic University of Technology at these competitions,
-                            aiming to bring rigorous engineering and teamwork from Bangladesh to the international
-                            stage. <em>(Placeholder copy &mdash; update with real competition history and results.)</em>
+                            Formula IUT has carried the Islamic University of Technology to Formula Student UK
+                            (Finalist, 2022), Formula Bharat (3rd in the Static Round, 2023), Formula Imperial
+                            (7th, 2024), and Formula Student China 2025 &mdash; where it was named 2nd Best
+                            Foreign Team on its first on-site international outing with the car.
                         </p>
                     </Reveal>
                     <Reveal delay={0.1} className='w-full md:w-6/12 h-full min-h-72'>

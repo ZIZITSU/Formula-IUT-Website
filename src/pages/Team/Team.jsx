@@ -1,73 +1,17 @@
 import { useEffect } from 'react';
-import { ChevronDown, User } from 'lucide-react';
 import { Link } from 'react-router';
 import Reveal from '../../components/shared/Reveal/Reveal';
 import TiltCard from '../../components/shared/TiltCard/TiltCard';
 
-const TeamPhoto = "/images/event3.png";
-
-const LEADERSHIP = [
-    { name: 'Team Captain Name', role: 'Team Captain' },
-    { name: 'Faculty Advisor Name', role: 'Faculty Advisor' },
+// Team 2024-25 panel — post graphics from public/images/panel
+const PANEL = [
+    { img: '/images/panel/592256981_843249348291000_6988243912846599422_n.jpg', name: 'Farhan Ibtahsum', role: 'Team Lead' },
+    { img: '/images/panel/591633566_843249681624300_3848687323697209780_n.jpg', name: 'Sakib Al Azad', role: 'Project Manager (Electrical)' },
+    { img: '/images/panel/593809726_843249454957656_7482438825216721472_n.jpg', name: 'Muneebur Rahman', role: 'Project Manager (Mechanical)' },
+    { img: '/images/panel/592356711_843249761624292_3593100014641709892_n.jpg', name: 'Azmir Hassan Jim', role: 'Technical Lead' },
+    { img: '/images/panel/592359703_843249801624288_903449427936901705_n.jpg', name: 'Jawad Ibn Jahir', role: 'Manufacturing Lead' },
+    { img: '/images/panel/594080428_843249654957636_1027982837140326157_n.jpg', name: 'Takibur Rahim', role: 'Operations Lead' },
 ];
-
-const SUBSYSTEMS = [
-    {
-        name: 'Chassis & Vehicle Dynamics',
-        members: [
-            { name: 'Member Name', role: 'Subsystem Lead' },
-            { name: 'Member Name', role: 'Team Member' },
-            { name: 'Member Name', role: 'Team Member' },
-        ],
-    },
-    {
-        name: 'Powertrain',
-        members: [
-            { name: 'Member Name', role: 'Subsystem Lead' },
-            { name: 'Member Name', role: 'Team Member' },
-            { name: 'Member Name', role: 'Team Member' },
-        ],
-    },
-    {
-        name: 'Aerodynamics',
-        members: [
-            { name: 'Member Name', role: 'Subsystem Lead' },
-            { name: 'Member Name', role: 'Team Member' },
-        ],
-    },
-    {
-        name: 'Electronics & Data Acquisition',
-        members: [
-            { name: 'Member Name', role: 'Subsystem Lead' },
-            { name: 'Member Name', role: 'Team Member' },
-        ],
-    },
-    {
-        name: 'Business & Management',
-        members: [
-            { name: 'Member Name', role: 'Subsystem Lead' },
-            { name: 'Member Name', role: 'Team Member' },
-            { name: 'Member Name', role: 'Team Member' },
-        ],
-    },
-];
-
-function MemberCard({ name, role, tag, index, featured }) {
-    return (
-        <TiltCard index={index} className="h-full">
-            <div className={`f1-card h-full rounded-2xl p-6 text-center transition-colors duration-300 hover:border-f1-red ${featured ? 'py-10' : ''}`}>
-                <div className={`mx-auto flex items-center justify-center rounded-full bg-white/5 border border-white/10 ${featured ? 'w-24 h-24' : 'w-20 h-20'}`}>
-                    <User className={featured ? 'w-11 h-11 text-zinc-500' : 'w-9 h-9 text-zinc-500'} />
-                </div>
-                {tag && (
-                    <p className="font-display uppercase tracking-widest text-xs text-f1-red mt-4">{tag}</p>
-                )}
-                <h3 className={`font-display uppercase font-bold text-white mt-2 ${featured ? 'text-2xl' : 'text-xl'}`}>{name}</h3>
-                <p className="text-zinc-400 mt-1">{role}</p>
-            </div>
-        </TiltCard>
-    );
-}
 
 const Team = () => {
 
@@ -76,62 +20,41 @@ const Team = () => {
         document.title = 'FormulaIUT | Team';
     }, []);
 
-    // Scroll to team content after clicking the down arrow
-    const scrollToSection = () => {
-        const section = document.getElementById('team-content');
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
     return (
         <div className='bg-black'>
-            {/* Team Photo */}
-            <div className='relative w-full h-svh min-h-80'>
-                <img src={TeamPhoto} alt="Formula IUT team" className='w-full h-full object-cover' />
-                <div className='absolute inset-0 bg-black/40 pointer-events-none'></div>
-                <div className='absolute left-0 right-0 bottom-0 h-1/3 bg-linear-to-b from-transparent to-black pointer-events-none'></div>
-                <button type="button" onClick={scrollToSection} className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 text-white cursor-pointer">
-                    <ChevronDown className="scroll-arrow w-9 h-9 md:w-10 md:h-10" />
-                </button>
-            </div>
-
             {/* Team Content */}
             <div id="team-content" className='px-5 md:px-0 pb-24'>
                 <Reveal>
-                    <h2 className='font-display uppercase text-4xl md:text-6xl font-extrabold text-white text-center mt-20 mb-6 w-11/12 mx-auto'>Meet Our Team</h2>
+                    <h2 className='font-display uppercase text-4xl md:text-6xl font-extrabold text-white text-center mt-30 mb-6 w-11/12 mx-auto'>Meet Our Team</h2>
                     <p className='text-center text-zinc-400 max-w-2xl mx-auto mb-16'>
-                        The people behind the car &mdash; organised by subsystem. <em>(Placeholder roster &mdash; swap in real names, roles, and photos.)</em>
+                        The people behind the car &mdash; the panel that leads Formula IUT.
                     </p>
                 </Reveal>
 
-                {/* Leadership */}
-                <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-20 md:mb-28 px-4'>
-                    {LEADERSHIP.map((person, i) => (
-                        <MemberCard key={person.role} {...person} index={i} featured />
-                    ))}
-                </div>
-
-                {/* Subsystems */}
-                <div className='max-w-6xl mx-auto space-y-20 md:space-y-24 px-4'>
-                    {SUBSYSTEMS.map((subsystem) => (
-                        <div key={subsystem.name}>
-                            <Reveal>
-                                <h3 className='font-display uppercase text-2xl md:text-3xl font-bold text-white text-center mb-2'>{subsystem.name}</h3>
-                                <div className='checkered-strip h-1.5 w-24 mx-auto mb-10 rounded-full overflow-hidden'></div>
-                            </Reveal>
-                            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-                                {subsystem.members.map((member, i) => (
-                                    <MemberCard
-                                        key={`${subsystem.name}-${i}`}
-                                        {...member}
-                                        tag={subsystem.name}
-                                        index={i}
+                {/* Panel 2024-25 */}
+                <div className='max-w-6xl mx-auto px-4'>
+                    <Reveal>
+                        <h3 className='font-display uppercase text-2xl md:text-3xl font-bold text-white text-center mb-2'>The Panel &mdash; 2024/25</h3>
+                        <div className='checkered-strip h-1.5 w-24 mx-auto mb-10 rounded-full overflow-hidden'></div>
+                    </Reveal>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+                        {PANEL.map((person, i) => (
+                            <TiltCard key={person.name} index={i} className="h-full">
+                                <div className='f1-card rounded-2xl overflow-hidden transition-colors duration-300 hover:border-f1-red'>
+                                    <img
+                                        src={person.img}
+                                        alt={`${person.name} — ${person.role}`}
+                                        loading='lazy'
+                                        className='w-full aspect-square object-cover'
                                     />
-                                ))}
-                            </div>
-                        </div>
-                    ))}
+                                    <div className='p-4 text-center'>
+                                        <h4 className='font-display uppercase font-bold text-white text-lg'>{person.name}</h4>
+                                        <p className='text-zinc-400 text-sm mt-1'>{person.role}</p>
+                                    </div>
+                                </div>
+                            </TiltCard>
+                        ))}
+                    </div>
                 </div>
 
                 {/* Recruitment CTA */}

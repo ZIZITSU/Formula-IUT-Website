@@ -1,20 +1,26 @@
 [
   {
     "id": 1,
-    "name": "Formula Student Germany 2025",
+    "name": "Formula Student UK 2026 — Sim Racing Series",
     "image": "/images/event1.png",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Placeholder recap — replace with the real event write-up."
+    "details": "Formula IUT made its debut in the Race Engineering Challenge at Formula Student UK 2026, hosted at the Williams F1 HQ. The team secured 9th place out of 72 universities worldwide in the final race and earned strong praise and recognition from industry-leading motorsport judges."
   },
   {
     "id": 2,
-    "name": "Workshop: Chassis Design",
-    "image": "/images/event2.png",
-    "details": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "name": "Formula Student China 2025",
+    "image": "/images/hero.jpg",
+    "details": "Formula IUT travelled to Zhengzhou, China for Formula Student China 2025 (8–12 October) — the team's first on-site international participation with its own car. Highlights: 2nd Best Foreign Team, 8th position in the Business Plan Presentation, and three technical recognition stickers for the team's technical capability and performance."
   },
   {
     "id": 3,
-    "name": "IUT Racing Exhibition",
+    "name": "Formula Imperial 2024",
+    "image": "/images/event2.png",
+    "details": "Formula IUT qualified for the final round of Formula Imperial 2024, securing 7th position overall."
+  },
+  {
+    "id": 4,
+    "name": "Formula Bharat 2023",
     "image": "/images/event3.png",
-    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    "details": "Competing against 50 university teams from different countries, Formula IUT secured 3rd position in the Static Round of Formula Bharat 2023, demonstrating excellence in vehicle design, cost analysis, and business planning."
   }
 ]

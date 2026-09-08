@@ -19,11 +19,20 @@ const Footer = () => {
                         <div className="space-y-4 mt-5 text-left text-zinc-300">
                             <div className="flex gap-3 items-center justify-start">
                                 <FaFacebook className="w-5 h-5 text-f1-red shrink-0" />
-                                <p>facebook.com/_____</p>
+                                <a
+                                    href="https://www.facebook.com/formulaiut.iutfsaeracingteam"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-f1-red transition-colors"
+                                >
+                                    facebook.com/formulaiut.iutfsaeracingteam
+                                </a>
                             </div>
                             <div className="flex gap-3 items-center justify-start">
                                 <MdEmail className="w-5 h-5 text-f1-red shrink-0" />
-                                <p>_____@____.com</p>
+                                <a href="mailto:formulaiut01@gmail.com" className="hover:text-f1-red transition-colors">
+                                    formulaiut01@gmail.com
+                                </a>
                             </div>
                             <div className="flex gap-3 items-center justify-start">
                                 <MdLocationOn className="w-5 h-5 text-f1-red shrink-0" />
