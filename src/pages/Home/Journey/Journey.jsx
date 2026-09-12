@@ -4,29 +4,34 @@ import Reveal from '../../../components/shared/Reveal/Reveal';
 
 const MILESTONES = [
     {
+        year: '2021',
+        title: 'Team Founded',
+        text: 'Formula IUT began under the IUT Automobile Society — a vision by a group of students with no funding, experience, or mentorship, determined to build a competitive FSAE car from scratch.',
+    },
+    {
         year: '2022',
-        title: 'Formula Student UK — Finalist',
-        text: 'Formula IUT was selected as a finalist at Formula Student UK 2022, the team’s first major international milestone.',
+        title: 'Formula Student UK — International Finalist',
+        text: 'Selected as one of 38 international finalists in the Concept Class at Formula Student UK 2022, and ranked 5th in the Lap Time Simulation (LTS) event.',
     },
     {
         year: '2023',
-        title: 'Formula Bharat — 3rd in Static Round',
-        text: 'Competing against 50 university teams from different countries, Formula IUT secured 3rd position in the Static Round of Formula Bharat 2023, with strong design, cost analysis, and business planning.',
+        title: 'Formula Bharat & IMechE FSUK — On-Site Finalists',
+        text: '3rd overall at Formula Bharat 2023 (Class I) — 4th in the Business Plan Presentation, 5th in Engineering Design — while qualifying for the On-Site Finals. The team also qualified for the IMechE FSUK 2023 (Class II) On-Site Finals at Silverstone Circuit.',
     },
     {
         year: '2024',
-        title: 'Formula Imperial — 7th Overall',
-        text: 'The team qualified for the final round of Formula Imperial 2024 and finished in 7th position.',
+        title: 'Formula Bharat & Formula Imperial',
+        text: '3rd overall out of 26 finalist teams at Formula Bharat 2024 (Class II). At Formula Imperial 2024, the team placed 7th overall in Combustion and 4th in Engineering Design, with 4th in the Business Plan Presentation.',
     },
     {
         year: '2025',
         title: 'Formula Student China — 2nd Best Foreign Team',
-        text: 'Formula IUT’s first on-site international participation with its car: named 2nd Best Foreign Team, placed 8th in the Business Plan Presentation, and earned three technical recognition stickers at Formula Student China 2025.',
+        text: 'Formula IUT’s first on-site international debut with its own car: 8th in the Business Plan Presentation, three technical recognition stickers, and recognition as 2nd Best Foreign Team overall.',
     },
     {
         year: '2026',
-        title: 'FSUK Sim Racing — 9th of 72',
-        text: 'At the Formula Student UK 2026 Sim Racing Series, hosted at Williams F1 HQ, Formula IUT placed 9th out of 72 universities worldwide and earned praise from motorsport judges on its Race Engineering debut. Next stop: Formula Student China 2026.',
+        title: 'IMechE FSUK Sim Racing — First Bangladeshi Finalist',
+        text: 'Reached the live finals at the Williams F1 Team HQ as the first Bangladeshi finalist team, out of 283 drivers from 73 university teams in 19 countries — finishing 9th in Final B and 9th in the Race Engineering Challenge.',
     },
 ];
 

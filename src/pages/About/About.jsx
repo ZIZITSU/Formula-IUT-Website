@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Trophy } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import Reveal from '../../components/shared/Reveal/Reveal';
 import ParallaxImage from '../../components/shared/ParallaxImage/ParallaxImage';
+import TiltCard from '../../components/shared/TiltCard/TiltCard';
 
 // Remaining photos from public/images/about us (SLider1.jpg is used on the home hero)
 const ABOUT_SLIDES = [
@@ -14,6 +15,37 @@ const ABOUT_SLIDES = [
     '/images/about%20us/Slider3.jpg',
     '/images/about%20us/hero.jpg',
     '/images/about%20us/748097046_982367438142905_7564755648499429963_n%20(2).jpg',
+];
+
+const ACHIEVEMENTS = [
+    {
+        comp: 'Formula Student UK (FSUK) 2022',
+        text: 'Selected as one of 38 international finalists in the Concept Class and ranked 5th in the Lap Time Simulation (LTS) event.',
+    },
+    {
+        comp: 'Formula Bharat 2023 (Class I)',
+        text: 'Finished 3rd place overall, securing 4th in the Business Plan Presentation and 5th in Engineering Design while qualifying for the On-Site Finals.',
+    },
+    {
+        comp: 'IMechE FSUK 2023 (Class II)',
+        text: 'Qualified for the prestigious On-Site Finals at the historic Silverstone Circuit in the UK.',
+    },
+    {
+        comp: 'Formula Bharat 2024 (Class II)',
+        text: 'Finished 3rd overall out of 26 competing finalist teams.',
+    },
+    {
+        comp: 'Formula Imperial 2024',
+        text: 'Ranked 7th overall in Combustion and 4th overall in Engineering Design, with 4th in the Business Plan Presentation.',
+    },
+    {
+        comp: 'Formula Student China 2025',
+        text: 'Placed 8th in the Business Plan Presentation, earned three technical recognition stickers, and was honoured as the 2nd Best Foreign Team overall.',
+    },
+    {
+        comp: 'IMechE FSUK Sim Racing 2026',
+        text: 'Reached the live finals at the Williams F1 Team Headquarters as the first Bangladeshi finalist team, finishing 9th in Final B and 9th in the Race Engineering Challenge.',
+    },
 ];
 
 const About = () => {
@@ -93,21 +125,64 @@ const About = () => {
                                 </Reveal>
                                 <Reveal delay={0.1} className='w-full md:w-7/12'>
                                     <h2 className='font-display uppercase text-white text-2xl font-bold mb-4'>Who are we?</h2>
-                                    <p className='text-base text-justify md:text-lg leading-relaxed text-gray-200 mb-4'>
-                                        Formula IUT represents the vision and ambition of the IUT FSAE Racing Team &mdash; a
-                                        multidisciplinary student motorsports team at the Islamic University of Technology
-                                        competing in international Formula Student and SAE competitions. With Engineering,
-                                        Business, and Management divisions, the team is currently finalising its race car
-                                        for upcoming international events while strengthening its global presence.
-                                    </p>
                                     <p className='text-base text-justify md:text-lg leading-relaxed text-gray-200'>
-                                        Formula IUT has represented Bangladesh at Formula Student UK, Formula Bharat,
-                                        Formula Imperial, and Formula Student China &mdash; earning recognition for design,
-                                        cost analysis, and business planning along the way.
+                                        FormulaIUT is one of Bangladesh&apos;s leading formula student teams, having
+                                        started its journey in late 2021 under the umbrella of IUT Automobile Society.
+                                        We are a multi-disciplinary operation spanning Mechanical, Electrical, Software,
+                                        and Business subteams; formula student competitions demand CAD modelling,
+                                        hands-on manufacturing, electronics, accounting, logistics, and marketing &mdash;
+                                        all learned under real deadlines and real budget constraints. The team started
+                                        as a vision by a few passionate students without funding, experience, or
+                                        mentorship, and has consistently represented the green and red flag across
+                                        numerous virtual and on-site platforms alongside the best teams in the world.
                                     </p>
                                 </Reveal>
                             </div>
                         </div>
+
+                        {/* Our Achievements */}
+                        <div>
+                            <Reveal>
+                                <h2 className='font-display uppercase text-white text-2xl font-bold mb-4 text-center'>Our Achievements</h2>
+                                <p className='text-base text-justify md:text-lg leading-relaxed text-gray-200 mb-10 text-center max-w-3xl mx-auto'>
+                                    Formula IUT has achieved rapid, credible progression from a concept-class team to
+                                    a competitive physical and virtual racing outfit on the global stage:
+                                </p>
+                            </Reveal>
+                            <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
+                                {ACHIEVEMENTS.map((item, i) => (
+                                    <TiltCard key={item.comp} index={i} className="h-full">
+                                        <div className='f1-card h-full rounded-2xl p-6'>
+                                            <Trophy className='w-6 h-6 text-f1-red mb-3' />
+                                            <h3 className='font-display uppercase font-bold text-white text-lg mb-2'>{item.comp}</h3>
+                                            <p className='text-zinc-400 text-sm leading-relaxed'>{item.text}</p>
+                                        </div>
+                                    </TiltCard>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* About Formula Student Competition */}
+                        <div>
+                            <Reveal>
+                                <h2 className='font-display uppercase text-white text-2xl font-bold mb-4 text-center'>About Formula Student Competition</h2>
+                                <p className='text-base text-justify md:text-lg leading-relaxed text-gray-200 max-w-3xl mx-auto'>
+                                    Formula Student is widely regarded as the largest student engineering competition
+                                    in the world, organised principally under the umbrella of the Institution of
+                                    Mechanical Engineers (IMechE) in partnership with SAE International and national
+                                    affiliate bodies in various host countries. Industry veterans challenge and judge
+                                    students on real-world constraints &mdash; material selection, tolerances,
+                                    manufacturing machinery, cost-efficiency, and feasibility in local industries
+                                    &mdash; across Engineering events like Static and Dynamic rounds, as well as the
+                                    Business Plan Presentation. Students gain experience in how actual industries
+                                    operate, global automotive networking opportunities, and mentorship from industry
+                                    leaders. The competition gives industries pre-vetted, elite recruitment
+                                    opportunities, and gives students substantial CV value, direct internship offers,
+                                    and technical visits.
+                                </p>
+                            </Reveal>
+                        </div>
+
                         <div>
                             {/* Message from team lead */}
                             <div className='flex flex-col-reverse md:flex-row items-stretch gap-8 md:gap-12 lg:gap-16'>

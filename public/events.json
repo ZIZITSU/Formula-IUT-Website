@@ -1,26 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Formula Student UK 2026 — Sim Racing Series",
+    "name": "IMechE FSUK Sim Racing 2026",
     "image": "/images/event1.png",
-    "details": "Formula IUT made its debut in the Race Engineering Challenge at Formula Student UK 2026, hosted at the Williams F1 HQ. The team secured 9th place out of 72 universities worldwide in the final race and earned strong praise and recognition from industry-leading motorsport judges."
+    "details": "In a historic achievement for Bangladeshi motorsport, Formula IUT became the first team from Bangladesh to qualify for the live finals of the prestigious IMechE FSUK Sim Racing Series. Out of a competitive global field of 283 drivers representing 73 university teams across 19 countries, Formula IUT earned their place at the live final hosted on July 14, 2026, at the Atlassian Williams F1 Team Experience Centre in Grove, Oxfordshire. Demonstrating exceptional analytical precision and resilience, the team achieved a 9th-place finish in the Race Engineering Challenge on their debut, using telemetry data evaluated against benchmark standards by motorsport judges. Despite suffering a severe starting-grid collision in the Final B race that left their virtual car with a broken suspension and a crooked steering wheel, the drivers persevered through severe handling issues to cross the finish line in an extraordinary 9th place overall. Participating here also let the team visit the Formula Student on-site competition at the legendary Silverstone Circuit, gaining valuable insights for Bangladesh's future on the pinnacle stage of Formula motorsport."
   },
   {
     "id": 2,
     "name": "Formula Student China 2025",
     "image": "/images/hero.jpg",
-    "details": "Formula IUT travelled to Zhengzhou, China for Formula Student China 2025 (8–12 October) — the team's first on-site international participation with its own car. Highlights: 2nd Best Foreign Team, 8th position in the Business Plan Presentation, and three technical recognition stickers for the team's technical capability and performance."
+    "details": "At Formula Student China 2025, held in Zhengzhou in October 2025, Formula IUT achieved a monumental milestone by making its first on-site international debut. Formula IUT delivered a standout performance, securing 8th place in the Business Plan Presentation (BPP) against an elite global field. The vehicle's engineering build quality and technical execution earned the squad three technical recognition stickers from international judges, culminating in Formula IUT being officially recognised as the 2nd Best Foreign Team overall. Competing on the global stage presented immense challenges — severe domestic supply-chain limitations, a lack of dedicated workshop infrastructure, and the unavailability of FSAE-grade parts like slick tyres and carbon fibre — all while operating on a fraction of typical international budgets. Despite these hurdles, the team delivered a performance on par with other international teams."
   },
   {
     "id": 3,
     "name": "Formula Imperial 2024",
     "image": "/images/event2.png",
-    "details": "Formula IUT qualified for the final round of Formula Imperial 2024, securing 7th position overall."
+    "details": "Formula IUT ranked 7th overall in Combustion and 4th overall in Engineering Design at Formula Imperial 2024, with 4th in the Business Plan Presentation."
   },
   {
     "id": 4,
-    "name": "Formula Bharat 2023",
+    "name": "Formula Bharat 2024 (Class II)",
     "image": "/images/event3.png",
-    "details": "Competing against 50 university teams from different countries, Formula IUT secured 3rd position in the Static Round of Formula Bharat 2023, demonstrating excellence in vehicle design, cost analysis, and business planning."
+    "details": "Formula IUT finished 3rd overall out of 26 competing finalist teams at Formula Bharat 2024 (Class II)."
+  },
+  {
+    "id": 5,
+    "name": "IMechE FSUK 2023 (Class II)",
+    "image": "/images/event1.png",
+    "details": "Formula IUT qualified for the prestigious On-Site Finals at the historic Silverstone Circuit in the UK at IMechE FSUK 2023 (Class II)."
+  },
+  {
+    "id": 6,
+    "name": "Formula Bharat 2023 (Class I)",
+    "image": "/images/event2.png",
+    "details": "Formula IUT finished 3rd place overall at Formula Bharat 2023 (Class I), securing 4th in the Business Plan Presentation and 5th in Engineering Design while qualifying for the On-Site Finals."
+  },
+  {
+    "id": 7,
+    "name": "Formula Student UK (FSUK) 2022",
+    "image": "/images/event3.png",
+    "details": "Formula IUT was selected as one of 38 international finalists in the Concept Class and ranked 5th in the Lap Time Simulation (LTS) event at Formula Student UK 2022."
   }
 ]

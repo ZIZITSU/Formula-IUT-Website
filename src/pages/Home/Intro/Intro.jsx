@@ -17,12 +17,14 @@ const Intro = () => {
                     <Reveal delay={0.1} className='w-full md:w-7/12'>
                         <h2 className='font-display uppercase text-white text-4xl md:text-5xl font-bold mb-4'>Who We Are</h2>
                         <p className='text-base text-justify md:text-lg leading-relaxed text-gray-200'>
-                            Formula IUT is the Formula SAE (FSAE) racing team of the Islamic University of
-                            Technology &mdash; a multidisciplinary student motorsports team with Engineering,
-                            Business, and Management divisions. Its members design, build, and race a
-                            formula-style vehicle from scratch while self-managing finances, sponsorship, and
-                            outreach, and the team is currently finalising its race car for upcoming
-                            international events.
+                            FormulaIUT is one of Bangladesh&apos;s leading formula student teams, having started
+                            its journey in late 2021 under the umbrella of IUT Automobile Society. We are a
+                            multi-disciplinary operation spanning Mechanical, Electrical, Software, and Business
+                            subteams &mdash; learning CAD modelling, hands-on manufacturing, electronics,
+                            accounting, logistics, and marketing under real deadlines and real budget
+                            constraints. What started as a vision by a few passionate students without funding,
+                            experience, or mentorship has consistently represented the green and red flag
+                            alongside the best teams in the world.
                         </p>
                     </Reveal>
                 </div>
@@ -34,17 +36,18 @@ const Intro = () => {
                     <Reveal className='w-full md:w-7/12'>
                         <h2 className='font-display uppercase text-white text-4xl md:text-5xl font-bold mb-4'>The Competition</h2>
                         <p className='text-base text-justify md:text-lg leading-relaxed text-gray-200 mb-4'>
-                            Formula SAE is one of the largest engineering student-design competitions in the world,
-                            with hundreds of teams competing globally. Each team designs, builds, and presents a
-                            prototype open-wheel racecar as if pitching it to a fictional manufacturer, and the car
-                            is then rigorously assessed across static and dynamic events &mdash; from cost and design
-                            judging to acceleration, autocross, and endurance.
+                            Formula Student is widely regarded as the largest student engineering competition in
+                            the world, organised principally by the Institution of Mechanical Engineers (IMechE)
+                            in partnership with SAE International and national affiliate bodies. Industry veterans
+                            judge students on real-world constraints &mdash; material selection, tolerances,
+                            manufacturing, cost-efficiency &mdash; across Static and Dynamic rounds and the
+                            Business Plan Presentation.
                         </p>
                         <p className='text-base text-justify md:text-lg leading-relaxed text-gray-200'>
-                            Formula IUT has carried the Islamic University of Technology to Formula Student UK
-                            (Finalist, 2022), Formula Bharat (3rd in the Static Round, 2023), Formula Imperial
-                            (7th, 2024), and Formula Student China 2025 &mdash; where it was named 2nd Best
-                            Foreign Team on its first on-site international outing with the car.
+                            Formula IUT has carried Bangladesh&apos;s flag to Formula Student UK, Formula Bharat,
+                            IMechE FSUK, Formula Imperial, Formula Student China, and the IMechE FSUK Sim Racing
+                            Series &mdash; from an international finalist debut in 2022 to becoming the first
+                            Bangladeshi team to reach the FSUK Sim Racing live finals at Williams F1 HQ in 2026.
                         </p>
                     </Reveal>
                     <Reveal delay={0.1} className='w-full md:w-6/12 h-full min-h-72'>
